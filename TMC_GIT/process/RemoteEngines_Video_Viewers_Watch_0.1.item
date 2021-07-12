@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="path of the log file to be downloaded from Dropbox" internalId="_a7XuYOLnEeuhfdGGhw0b9w" name="parameter_download_path" prompt="parameter_download_path?" promptNeeded="false" type="id_String" value="C:/StudentFiles/StreamingResultsLog.csv"/>
-    <contextParameter comment="percentage of movie watched above which royalties are due" internalId="_a7XuYeLnEeuhfdGGhw0b9w" name="parameter_percent_to_pay_views" prompt="parameter_percent_to_pay_views?" promptNeeded="false" type="id_Float" value="0.2"/>
-    <contextParameter comment="path to upload the result file to on Dropbox" internalId="_a7XuYuLnEeuhfdGGhw0b9w" name="parameter_upload_path" prompt="parameter_upload_path?" promptNeeded="false" type="id_String" value="C:/StudentFiles/StreamingResultsLog_FilteredRecords.csv"/>
+    <contextParameter comment="path of the log file to be downloaded from Dropbox" internalId="_a7XuYOLnEeuhfdGGhw0b9w" name="parameter_download_path" prompt="parameter_download_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/StudentFiles/StreamingResultsLog.csv"/>
+    <contextParameter comment="percentage of movie watched above which royalties are due" internalId="_a7XuYeLnEeuhfdGGhw0b9w" name="parameter_percent_to_pay_views" prompt="parameter_percent_to_pay_views?" promptNeeded="false" repositoryContextId="built-in" type="id_Float" value="0.2"/>
+    <contextParameter comment="path to upload the result file to on Dropbox" internalId="_a7XuYuLnEeuhfdGGhw0b9w" name="parameter_upload_path" prompt="parameter_upload_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/StudentFiles/StreamingResultsLog_FilteredRecords.csv"/>
   </context>
   <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
@@ -31,8 +32,9 @@
     <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
     <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
     <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -45,7 +47,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:+2MG7AAN4KE7bOLutk5EdgM677jBItGWv0dmKUiu"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:75D/bKfO4UXT6+tzGQ0OhXaNvMXTNfKWvgHl4ROj"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -60,7 +62,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/Student/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/student/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -68,7 +70,7 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
     <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
     <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
@@ -80,7 +82,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:XY9RwRUwBdp2JApQLWAVz2Sd1HgkBAVx6vOg3r+x"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8opPlLuJ9929VMggJDa66pf7ZMSj4QIvhWS5JOkh"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -111,10 +113,8 @@
     <routinesParameter id="_ipQAYEe3EeSjy-1b-KlPDA" name="DqStringHandling"/>
     <routinesParameter id="_ipVf8Ee3EeSjy-1b-KlPDA" name="DQTechnical"/>
     <routinesParameter id="_ipkJcEe3EeSjy-1b-KlPDA" name="SQLike"/>
-    <routinesParameter id="_6mCjIHY6EeSPspaU3aRg1A" name="MDM"/>
     <routinesParameter id="_mcersIL7EeWjeJx8C1QGpA" name="DataQualityDependencies"/>
     <routinesParameter id="_CW1QkC5MEeaG6rBxve596Q" name="DataMasking"/>
-    <routinesParameter id="_PESjcCYYEeW5gZVXtfxI4A" name="IpaasFileUtil"/>
     <routinesParameter id="_kGMlYLflEee7_fd0DYdYrA" name="TalendStringUtil"/>
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
@@ -352,13 +352,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fc37c0c5-2e0d-409a-a686-f2fad50099ff"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fyZcmbRsON0Pc7iUfAabkFmkVXSGbNQhonnPZ8fXU0EpqxVi/jTv2g+N8zOar5dTzxYekk++79y0
-oB0gIINRig==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_62238f2d-ad87-45ca-9ce8-62411ef7a40f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>njSVNs5TVkHuGJITgD0EbMB5Hb17KOEw+Gd4tSxr3IutQAQL0q1CSZHZVh7nyVnFCL6ovNYG6JnT
-d0kvpgcTFA==</DigestValue></Reference></SignedInfo><SignatureValue>aztsPvG/jHNFCL0BhSi6liiwAf12dc4FTluQEGyIX+9zIfLgJb66i904Fq3U/PWPjiw8N9fZI79s
-kVwm7LAj6X/+Qcmk00LocWqrxmYSSetbURIo3+63Lg9pYnHhlokN7CxJQxsseKOPvo7r0IPHqAkh
-V2N4zZX1J1T/mxcb7Nxvrn932xFxKk9cmMuBYRnjLAdSNKt4JuAh/pecwlRrQi4KC+4QOO0OrQZE
-sGsU99CwTYgfNGnB9NhUXjNXUNhAgUpU8i4OQNrPzO2gMtkZKRosxQGISnJIX/CN8GXe3OHkwGJO
-V+S9RznkVh0hlj+MZEYsc6TMQPg9c5/EkGuAKA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_834eada7-599d-433a-8802-1f1a703cdff8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wwUI/sX3Rh0LRe+PB3DOqyk68xGT06G8pq9gLga4QY7BMfB5c2M8HSoBZs0jLhCWf0PInzCjQgCC
+LsATvU/9NA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_49ad5b7d-5e2f-4974-8d0b-8e072ac0a4dd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PdkRPc3Yfc5Qc2wAlF/+isTHRXx08AXulkNefHg0NFJNlzM+nWkKPgvPGvJuWIBjOj1NdAkDHTcP
+6meLonl2NA==</DigestValue></Reference></SignedInfo><SignatureValue>jfBVHYHrOnYiYAs2JgBScHnIddRXSmk4tjwYFdDDHA2Omrf4aGV44nL/+LypSUr9DFwO9egTxgHl
+hSkDQ6fPtBbo5kMD9KqSW8fLM/+WWYQZsVv3uXmGw7qxGC+Nca/g56enPnXWoh27J2ZzRoPsCvOB
+1m7LoMxsjILjLmaysH4zg95tRwjDFnUAGaJyzcBrfD37Eel+/wmQL7P62g+RU50NP6aw7KgwV/E2
+tHXCyDp895KvN1Sj0uSEchqDi2GnHWd9BzOg2kx8RqpD+JVfQmkZ6WhPd2+l5s1aiLW2VxzMnUkQ
+X2EvI8brmt9nEudOKY2oazc8/VrVoaJEcTy/4g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -380,4 +380,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_62238f2d-ad87-45ca-9ce8-62411ef7a40f" Target="#_fc37c0c5-2e0d-409a-a686-f2fad50099ff"><Timestamp>2021-07-12 08:01:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_49ad5b7d-5e2f-4974-8d0b-8e072ac0a4dd" Target="#_834eada7-599d-433a-8802-1f1a703cdff8"><Timestamp>2021-07-12 08:05:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
